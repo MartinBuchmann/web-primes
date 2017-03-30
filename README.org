@@ -14,5 +14,28 @@ I am using:
 - [[http://weitz.de/hunchentoot/][hunchentoot]]
 - [[http://weitz.de/cl-who/][cl-who]]
 - [[https://common-lisp.net/project/parenscript/][parenscript]]
+- [[http://www.cliki.net/LASS][lass]]
 
 as the basic libraries which are all available via [[https://www.quicklisp.org/beta/][quicklisp]].
+
+I did not spend much time on the design of this page and have only very little
+knowledge about JavaScript and CSS. This could all be added in a real web
+application. Furthermore, one could set up a database and store factorizations
+already calculated and so on...
+
+** Loading the app
+
+After downloading the source and place it in a location [[https://common-lisp.net/project/asdf/][ASDF]] knows, simply type:
+
+#+BEGIN_SRC lisp
+> (asdf:load-system :web-primes)
+#+END_SRC
+
+Then visit http://localhost:8080/primfaktoren in your browser and start factorizing.
+
+To stop the server, type the following in your REPL:
+#+BEGIN_SRC lisp
+> (hunchentoot:stop web-primes::*acceptor*)
+#+END_SRC
+
+#  LocalWords:  REPL
