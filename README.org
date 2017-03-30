@@ -1,0 +1,18 @@
+# -*- ispell-local-dictionary: "en" -*-
+#+OPTIONS: toc:nil
+#+AUTHOR: Martin Buchmann
+#+TITLE: web-primes
+
+* A simple Common Lisp web application factorizing numbers into primes
+
+Just for my own pleasure and curiosity I wanted to combine Lisp's possibilities
+to generate /dynamic/ [[http://www.cliki.net/Web][web]] pages and some basic math I picked up at [[https://projecteuler.net][Project
+Euler]].  The whole endeavour was inspired by Adam Tornhill's great [[https://leanpub.com/lispweb][tutorial]].
+
+I am using:
+
+- [[http://weitz.de/hunchentoot/][hunchentoot]]
+- [[http://weitz.de/cl-who/][cl-who]]
+- [[https://common-lisp.net/project/parenscript/][parenscript]]
+
+as the basic libraries which are all available via [[https://www.quicklisp.org/beta/][quicklisp]].
